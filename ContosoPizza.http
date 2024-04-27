@@ -1,9 +1,10 @@
-@ContosoPizza_HostAddress = http://localhost:5270
+@ContosoPizza_HostAddress = http://localhost:5103
 
 GET {{ContosoPizza_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+
 GET {{ContosoPizza_HostAddress}}/pizza/
 Accept: application/json
 
@@ -13,10 +14,12 @@ GET {{ContosoPizza_HostAddress}}/pizza/1
 Accept: application/json
 
 ###
+
 GET {{ContosoPizza_HostAddress}}/pizza/5
 Accept: application/json
 
 ###
+
 POST {{ContosoPizza_HostAddress}}/pizza/
 Content-Type: application/json
 
@@ -26,6 +29,7 @@ Content-Type: application/json
 }
 
 ###
+
 PUT {{ContosoPizza_HostAddress}}/pizza/3
 Content-Type: application/json
 
@@ -36,14 +40,7 @@ Content-Type: application/json
 }
 
 ###
-GET {{ContosoPizza_HostAddress}}/pizza/5
-Accept: application/json
 
-###
 DELETE {{ContosoPizza_HostAddress}}/pizza/3
-
-###
-GET {{ContosoPizza_HostAddress}}/pizza/
-Accept: application/json
 
 ###
